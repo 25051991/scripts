@@ -1,0 +1,11 @@
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+
+
+git clone command
+https://github.com/CloudDevOpsHub/terraformcode.git
+
+
+terraform init
+terraform plan
+terraform apply
