@@ -1,0 +1,28 @@
+docker first project:
+
+sudo apt update
+ sudo apt-get update
+   docker --version
+  apt install docker.io
+  docker --version
+    
+    docker images
+
+    docker pull nginx
+    mkdir -p /vikas/html
+   cd /vikas/html
+    vi index.html
+     docker images
+    docker run --name batch40 -p 80:80 -d -v /vikas/html:/usr/share/nginx/html nginx   --> done 
+     docker ps---> we see the runnins containers
+     docker ps---> we see the runnins,stop or exit containers
+
+
+docker run cb3e74fb1b5-----> if we not given name to container then random name it will take
+--------------------------------------------------------------------------------------------------------
+
+Docker File :
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install nginx -y
+CMD ["echo","Image created"]
