@@ -1,0 +1,14 @@
+E-commerce projectn k8s
+-----------------------------------------------------------
+
+git clone https://github.com/GoogleCloudPlatform/microservices-demo.git
+
+Vikas from CloudDevOpsHub 9:34
+https://github.com/GoogleCloudPlatform/microservices-demo/tree/main
+
+kubectl apply -f kubernetes-manifests.yaml ----execute command
+kubectl get po-----to check working pods
+
+kubectl get svc
+
+git clone project code
