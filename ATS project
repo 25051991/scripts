@@ -1,0 +1,43 @@
+#Steps for ATS projects
+
+# pre-requisites
+#ATS python code
+#ATS environment setup  → manual after ci/cd
+#AI Gemini setup
+#Connect ATS application with GCP gemini
+#Test application
+#Review own resume and own environment
+
+
+#created EC2 ubuntu machine (default conf)
+ Allow port number: 8501 
+
+#Part2: Python app installation
+ sudo apt update && sudo apt install python3 python3-pip python3-venv -y
+
+
+#Part3: clone the code
+git clone https://github.com/CloudDevOpsHub/Application-Tracking-System.git
+cd Application-Tracking-System
+
+#part 4: Setup env:
+ python3 -m venv venv
+ source venv/bin/activate
+ pip install --upgrade pip
+ pip install -r requirements.txt
+ pip install google-generativeai
+
+
+#Gcp and create api key:
+ Gemini api -> enable -> manage -> credentials -> create api key -> copy API key here
+ GOOGLE_API_KEY = "(paste the API key here)"
+ mkdir -p .streamlit
+ vi .streamlit/secrets.toml
+
+#Paste the key in gemini API key in the TOML file and save
+ streamlit run app.py --server.port 8501 --server.enableCORS=false
+
+
+# copy and paste the external URL in the browser.
+
+
