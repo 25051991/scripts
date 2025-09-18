@@ -1,2 +1,12 @@
 https://docs.google.com/document/d/1NY56yKpe7OQAk40LdEWoCnDyPQ9UGwjtSdB9FMkN2_Q/edit?usp=sharing
 https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.45/bin/apache-tomcat-10.1.45.tar.gz
+
+
+
+
+------------------Password-------------------
+<role rolename="manager-gui" />
+<user username="tomcat" password="tomcat" roles="manager-gui" />
+<role rolename="admin-gui" />
+<role rolename="manager-script" />
+<user username="admin" password="admin" roles="manager-gui,admin-gui,manager-script"/>
